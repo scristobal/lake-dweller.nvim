@@ -55,7 +55,7 @@ require("lake-dweller").setup({
 
 Additional theme files for other applications are in the `extras/` directory:
 
-- **Wezterm**: `extras/wezterm/lake-dweller.toml`
+- **WezTerm**: `extras/wezterm/lake-dweller.toml`
 
 ### Lualine
 
@@ -71,14 +71,14 @@ require("lualine").setup({
 
 | Color | Hex | Usage |
 |-------|-----|-------|
+| ![#0e0e16](https://placehold.co/15x15/0e0e16/0e0e16.png) Dark Navy | `#0e0e16` | Background |
 | ![#d8d8d8](https://placehold.co/15x15/d8d8d8/d8d8d8.png) Light Grey | `#d8d8d8` | Base text |
-| ![#d58ca6](https://placehold.co/15x15/d58ca6/d58ca6.png) Rosy Pink | `#d58ca6` | Strings |
 | ![#8ac490](https://placehold.co/15x15/8ac490/8ac490.png) Soft Green | `#8ac490` | Comments |
 | ![#858d95](https://placehold.co/15x15/858d95/858d95.png) Muted Slate | `#858d95` | Keywords |
-| ![#ef8a90](https://placehold.co/15x15/ef8a90/ef8a90.png) Bright Red | `#ef8a90` | Constants, errors |
 | ![#b0c0e0](https://placehold.co/15x15/b0c0e0/b0c0e0.png) Pale Blue | `#b0c0e0` | Functions |
 | ![#70a8a8](https://placehold.co/15x15/70a8a8/70a8a8.png) Muted Cyan | `#70a8a8` | Types |
-| ![#0e0e16](https://placehold.co/15x15/0e0e16/0e0e16.png) Dark Navy | `#0e0e16` | Background |
+| ![#d58ca6](https://placehold.co/15x15/d58ca6/d58ca6.png) Rosy Pink | `#d58ca6` | Strings |
+| ![#ef8a90](https://placehold.co/15x15/ef8a90/ef8a90.png) Bright Red | `#ef8a90` | Constants, errors |
 
 ## Supported Plugins
 
@@ -105,7 +105,7 @@ Only use distinct colors for specific, common elements—so you can tell at a gl
 1. Functions
 2. Types
 3. Keywords
-4. Constant values—numbers, booleans, strings, nulls, etc.
+4. Constant values—numbers, booleans, strings, nulls, etc. Strings can use slightly different shades for clarity.
 5. Comments
 
 ### Keywords don't need your attention

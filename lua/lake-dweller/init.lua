@@ -3,7 +3,7 @@ local M = {}
 M.config = {
     transparent = false,
     italics = true,
-    float_background = false, -- true = distinct lighter background, false = same as editor
+    float_background = false,
 }
 
 function M.setup(opts)
@@ -20,7 +20,6 @@ function M.load()
     vim.o.termguicolors = true
     vim.g.colors_name = "lake-dweller"
 
-    local palette = require("lake-dweller.palette")
     local theme = require("lake-dweller.theme")(M.config)
 
     local groups = {}
@@ -30,7 +29,7 @@ function M.load()
         require("lake-dweller.groups.diagnostics"),
         require("lake-dweller.groups.plugins"),
     }) do
-        for name, hl in pairs(group_fn(theme, palette, M.config)) do
+        for name, hl in pairs(group_fn(theme, M.config)) do
             groups[name] = hl
         end
     end
@@ -39,7 +38,5 @@ function M.load()
         vim.api.nvim_set_hl(0, name, hl)
     end
 end
-
-M.palette = require("lake-dweller.palette")
 
 return M
